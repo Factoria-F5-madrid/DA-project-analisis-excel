@@ -8,16 +8,16 @@ Este proyecto se centrará en aplicar la metodología completa de análisis de d
 
 El objetivo es transformar datos brutos importados (posiblemente usando Power Query) en insights accionables, utilizando herramientas analíticas potentes como las tablas dinámicas, y culminando en la construcción de un tablero de mando (dashboard) que funcione como una "aplicación personalizada".
 
-Para este proyecto, trabajaremos con el dataset "Data Science for Good: Kiva Crowdfunding" que contiene información sobre préstamos de microfinanciación de Kiva, una organización sin fines de lucro.
+## 📊 Dataset Utilizado
 
-Dataset principal: Descargar dataset Kiva
+Para este proyecto, trabajaremos con el dataset **"Data Science for Good: Kiva Crowdfunding"** que contiene información sobre préstamos de microfinanciación de Kiva, una organización sin fines de lucro.
 
-Información detallada del dataset: Kaggle - Kiva Crowdfunding
+- **Dataset principal**: [Descargar dataset Kiva](https://drive.google.com/file/d/1hY7KOuXNyY7WPw9cICXqrxmT8iRytmJk/view?usp=sharing)
+- **Información detallada del dataset**: [Kaggle - Kiva Crowdfunding](https://www.kaggle.com/datasets/kiva/data-science-for-good-kiva-crowdfunding)
+- **Organización**: [Kiva.org](https://www.kiva.org/)
 
-Organización: Kiva.org
-
-⚠️ Nota sobre la elección del dataset
-Puedes utilizar cualquier dataset de tu interés obtenido de otras fuentes de internet como Kaggle, data.gov, UCI Machine Learning Repository, o cualquier otra fuente de datos pública que sea de tu interés personal o profesional.
+### ⚠️ Nota sobre la elección del dataset
+**Puedes utilizar cualquier dataset de tu interés** obtenido de otras fuentes de internet como Kaggle, data.gov, UCI Machine Learning Repository, o cualquier otra fuente de datos pública que sea de tu interés personal o profesional.
 
 ## 📦 Condiciones de entrega
 
@@ -89,4 +89,5 @@ El proyecto es **Individual**.
 - Gestionar equipos técnicos
 - Evaluar Conjuntos de datos
 - Desarrollar interfaces dinámicas
+
 
