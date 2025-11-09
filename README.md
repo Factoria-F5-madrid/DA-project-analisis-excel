@@ -4,9 +4,20 @@
 
 ## 📝 Descripción del Proyecto
 
-Este proyecto se centrará en aplicar la metodología completa de análisis de datos mediante Microsoft Excel, que se divide en tres fases principales: **Importar y preparar los datos**, **Analizar los datos**, y **Creación de un dashboard interactivo con Excel**. 
+Este proyecto se centrará en aplicar la metodología completa de análisis de datos mediante Microsoft Excel, que se divide en tres fases principales: **Importar y preparar los datos**, **Analizar los datos**, y **Creación de un dashboard interactivo con Excel**.
 
 El objetivo es transformar datos brutos importados (posiblemente usando Power Query) en insights accionables, utilizando herramientas analíticas potentes como las tablas dinámicas, y culminando en la construcción de un tablero de mando (dashboard) que funcione como una "aplicación personalizada".
+
+Para este proyecto, trabajaremos con el dataset "Data Science for Good: Kiva Crowdfunding" que contiene información sobre préstamos de microfinanciación de Kiva, una organización sin fines de lucro.
+
+Dataset principal: Descargar dataset Kiva
+
+Información detallada del dataset: Kaggle - Kiva Crowdfunding
+
+Organización: Kiva.org
+
+⚠️ Nota sobre la elección del dataset
+Puedes utilizar cualquier dataset de tu interés obtenido de otras fuentes de internet como Kaggle, data.gov, UCI Machine Learning Repository, o cualquier otra fuente de datos pública que sea de tu interés personal o profesional.
 
 ## 📦 Condiciones de entrega
 
@@ -78,3 +89,4 @@ El proyecto es **Individual**.
 - Gestionar equipos técnicos
 - Evaluar Conjuntos de datos
 - Desarrollar interfaces dinámicas
+
