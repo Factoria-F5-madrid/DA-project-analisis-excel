@@ -1,20 +1,30 @@
-<img width="11520" height="3456" alt="Banner Proyectos" src="https://github.com/user-attachments/assets/567f051d-05d3-43a0-8e95-bbf7448ab7d2" />
+# Limpieza de datos en Notebook — Proyecto inicial (Kiva Crowdfunding)
 
-# Análisis de Datos y Dashboard Interactivo en Excel
+## 📝 Descripción del proyecto
 
-## 📝 Descripción del Proyecto
+Este proyecto se centrará en aplicar las mejores prácticas de limpieza y preparación de datos utilizando Python en un entorno de notebook (Jupyter/Google Colab). El objetivo es transformar los datos brutos del dataset de Kiva Crowdfunding en un conjunto de datos estructurado, consistente y listo para análisis o modelado predictivo.
 
-Este proyecto se centrará en aplicar la metodología completa de análisis de datos mediante Microsoft Excel, que se divide en tres fases principales: **Importar y preparar los datos**, **Analizar los datos**, y **Creación de un dashboard interactivo con Excel**.
+El proyecto sigue una metodología reproducible que abarca tres etapas fundamentales: **Importación y exploración inicial**, **Diagnóstico y limpieza de datos**, y **Validación y exportación del dataset limpio**. Se enfatiza la documentación clara de cada decisión tomada durante el proceso de limpieza, garantizando que cualquier miembro del equipo pueda replicar el trabajo y comprender el razonamiento detrás de cada transformación aplicada.
 
-El objetivo es transformar datos brutos importados (posiblemente usando Power Query) en insights accionables, utilizando herramientas analíticas potentes como las tablas dinámicas, y culminando en la construcción de un tablero de mando (dashboard) que funcione como una "aplicación personalizada".
+## 🎯 Objetivos concretos
+
+- Entender la estructura y calidad raw del dataset.
+- Corregir tipos, fechas y valores inconsistentes.
+- Eliminar/gestionar duplicados y valores faltantes de forma documentada.
+- Crear un artefacto final (CSV/Parquet) y un notebook reproducible con comentarios y celdas explicativas.
 
 ## 📊 Dataset Utilizado
-
 Para este proyecto, trabajaremos con el dataset **"Data Science for Good: Kiva Crowdfunding"** que contiene información sobre préstamos de microfinanciación de Kiva, una organización sin fines de lucro.
 
 - **Dataset principal**: [Descargar dataset Kiva](https://drive.google.com/file/d/1hY7KOuXNyY7WPw9cICXqrxmT8iRytmJk/view?usp=sharing)
 - **Información detallada del dataset**: [Kaggle - Kiva Crowdfunding](https://www.kaggle.com/datasets/kiva/data-science-for-good-kiva-crowdfunding)
 - **Organización**: [Kiva.org](https://www.kiva.org/)
+  
+## 🧰 Tecnologías y librerías
+
+- **Python** (notebook Jupyter o Google Colab)
+- **Librerías:** pandas, numpy, matplotlib / seaborn (opcional para exploración), pyarrow (si se exporta Parquet)
+- **Control de versiones:** git (repositorio), README.md
 
 ### ⚠️ Nota sobre la elección del dataset
 **Puedes utilizar cualquier dataset de tu interés** obtenido de otras fuentes de internet como Kaggle, data.gov, UCI Machine Learning Repository, o cualquier otra fuente de datos pública que sea de tu interés personal o profesional.
@@ -23,9 +33,13 @@ Para este proyecto, trabajaremos con el dataset **"Data Science for Good: Kiva C
 
 El proyecto es **Individual**.
 
-- Será necesario entregar el archivo de Excel completo y funcional.
-- El archivo debe incluir una hoja oculta con todas las tablas dinámicas utilizadas para generar el análisis.
-- Repositorio (local o GitHub) con el archivo de Excel y los ficheros de datos fuente.
+1. Será necesario entregar un **Notebook** (.ipynb) bien organizado y con comentarios explicativos.
+2. Será necesario entregar el **Dataset limpio** exportado (CSV o Parquet).
+3. Será necesario entregar un **README** con:
+   - Pasos ejecutados
+   - Cómo ejecutar el notebook
+   - Resumen de decisiones de limpieza
+4. **Repositorio** con todo lo anterior.
 
 ## ⏳ Plazo de Entrega
 
@@ -33,61 +47,41 @@ El proyecto es **Individual**.
 
 ## 🛠️ Tecnologías a usar
 
-- Microsoft Excel (incluyendo Power Query)
+- Google Colab
+- Github
 
-## 🏆 Niveles de Entrega
+## 🧭 Estructura recomendada del Notebook
 
-### 🟢 Nivel Esencial
+1. **Importar datos** (mostrar primeros registros)
+2. **Análisis exploratorio rápido** (shape, tipos, resumen estadístico)
+3. **Diagnóstico de problemas** (missing, outliers, duplicados, formatos)
+4. **Transformaciones y limpieza** (paso a paso, con celdas y comentarios)
+5. **Validación post-limpieza** (checks, counts, sample)
+6. **Exportar dataset limpio** y notas finales
 
-✅ Datos importados y transformados al formato de tabla (objeto) en Excel.
+## ✅ Checklist de limpieza (tareas y decisiones típicas)
 
-✅ Datos preparados mediante la eliminación de duplicados, filtrado y ordenación cronológica.
+- [ ] Revisar columnas, tipos de datos y convertir columnas de fecha a datetime
+- [ ] Detectar y eliminar duplicados (documentar criterio)
+- [ ] Analizar y tratar valores faltantes: imputación simple, eliminación o marca explícita
+- [ ] Normalizar textos (país, moneda, categorías): trim, lower, mapeos
+- [ ] Corregir formatos numéricos (coma/punto, tipos numéricos)
+- [ ] Detectar y gestionar outliers razonables (documentar por qué se quitan o conservan)**
+- [ ] Crear columnas derivadas útiles (ej.: año, mes, duración, ratio)
+- [ ] Codificar variables categóricas si procede (labels / one-hot solo si es necesario)**
+- [ ] Guardar snapshot del raw original y del dataset final**
+- [ ] Añadir pruebas sencillas: conteos esperados, no-null en campos clave, unicidad**
 
-✅ Análisis exploratorio básico aplicando Formato Condicional para identificar insights visuales.
+## 📈 Buenas prácticas y criterios de calidad
 
-✅ Creación de nuevas variables/columnas utilizando funciones analíticas básicas como la función SI (condicionales).
+- **Reproducibilidad:** todo cambio debe poder ejecutarse de nuevo desde el notebook
+- **Trazabilidad:** explicar por qué se tomó cada decisión (notas/markdown)
+- **Minimalismo en pérdida de información:** eliminar filas solo si hay justificación
+- **Entregable usable:** dataset final con tipos correctos y documentación mínima
 
-✅ Generación de un análisis estadístico descriptivo utilizando la herramienta de Análisis de Datos de Excel.
-
----
-
-### 🟡 Nivel Medio
-
-✅ Uso exhaustivo de Tablas Dinámicas (Pivot Tables), la herramienta analítica más potente de Excel, para resumir y agregar métricas (suma, promedio).
-
-✅ Creación de gráficos (visuales) a partir de las Tablas Dinámicas.
-
-✅ Estructuración y diseño del dashboard, incluyendo formas y títulos para KPIs y gráficos.
-
-✅ Implementación de KPIs mediante cuadros de texto referenciados dinámicamente a celdas de las Tablas Dinámicas.
-
----
-
-### 🟠 Nivel Avanzado
-
-✅ Dashboard interactivo mediante el uso de Segmentadores (Slicers) que permiten filtrar los datos por múltiples campos (ej: país).
-
-✅ El Segmentador debe estar conectado a todas las Tablas Dinámicas subyacentes del dashboard para garantizar la actualización total de los datos.
-
-✅ Aplicación de técnicas de formato para simular una aplicación (modo de pantalla completa, ocultando la cuadrícula, encabezados y la barra de fórmulas).
-
----
-
-### 🔴 Nivel Experto
-
-✅ Aplicación completa de las configuraciones para ocultar la interfaz de Excel (barras de desplazamiento y pestañas de hoja), haciendo que el archivo final parezca una aplicación.
-
-✅ Uso avanzado de Power Query para realizar transformaciones de datos complejas durante la fase de importación.
-
-✅ El archivo debe ser robusto y capaz de manejar actualizaciones de la fuente de datos con un mínimo de intervención.
-
-## Evaluación
-
-**Competencias a evaluar:**
+## 🧪 Criterios de evaluación
 
 - Configurar y automatizar su entorno de trabajo.
 - Gestionar equipos técnicos
 - Evaluar Conjuntos de datos
-- Desarrollar interfaces dinámicas
-
-
+- Desarrollar interfaces dinámicas**
